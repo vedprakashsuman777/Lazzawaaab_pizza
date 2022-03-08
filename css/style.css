@@ -140,6 +140,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 			font-size: 20px;
 		}
 		.price{
+            visibility: hidden;
 			font-size: 16px;
 			margin-bottom: 0;
 			span{
@@ -992,7 +993,13 @@ pre {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%; }
-  .col-md-4 {
+  .col-md-4v {
+     -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 33.33333%;
+    }
+    .col-md-4 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 33.33333%;
     flex: 0 0 33.33333%;
@@ -8039,6 +8046,7 @@ h1, h2, h3, h4, h5,
         background: url(../images/bg_4.jpg) no-repeat fixed;
         padding-right: 20px; }
     .pricing-entry .text .price {
+        visibility: hidden;
       width: 80px;
       color: #FFC718;
       text-align: right;
